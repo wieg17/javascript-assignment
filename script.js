@@ -1,7 +1,33 @@
 /* GLOBAL VARIABLES */
 var listOfProducts;
-// add more global variables when needed..
+[
+    {
+        "title": "iPhone X",
+        "description": "Latest and gratest smartphone from Apple.",
+        "image": "iPhonex.png",
+        "price": 11495
+    },{
+        "title": "One Plus 5",
+        "description": "Sleek and powerful smartphone from One Plus",
+        "image": "OnePlus5.png",
+        "price": 4995
+    },{
+        "title": "Galaxy S8",
+        "description": "Latest edge to edge smartphone from Samsung.",
+        "image": "SamsungS8.png",
+        "price": 7990
+    },{
+        "title": "LG V30",
+        "description": "Super nice and beautiful smartphone from LG.",
+        "image": "LGV30.png",
+        "price": 7495
+    }
+];
+createUIFromLoadedProducts();
 
+ 
+// add more global variables when needed..
+ 
 /* Get products from the json file and store it in a javascript variable */
 fetch("./products.json")
 .then(function(response) {
@@ -23,8 +49,12 @@ function createUIFromLoadedProducts() {
     /* Each function must have an explainetory comment like the one for this function, see row 15 */
     
     /* Feel free to remove these other comments */
+   
+
+var main = document.querySelector("#main");
+console.log(main);
+main.innerHTML="TEST";
+
 }
-
-
 /* Read the projects readme before you start! */
 /* Good luck and have fun 🤓 */
